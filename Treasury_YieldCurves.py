@@ -19,7 +19,7 @@ database_url = os.environ.get('LINK_TYIELDS')
 path_to_files = os.environ.get('PATH_TO_YIELD_FILES')
 
 #Get the latest treasury data and save locally as xml file
-url = 'https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/XmlView.aspx?data=yieldyear&year=2021'
+url = 'https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/XmlView.aspx?data=yieldyear&year=2022'
 resp = requests.get(url)
 
 with open(path_to_files + '/DailyTreasuryYieldCurveRateData.xml', 'wb') as foutput:
